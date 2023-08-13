@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 120vh;
+    overflow: hidden;
+
+}
+
+/* Home */
+
+/* Background start */
+
+.background-home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: -1;
+}
+
+.background-home img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.background-home img.village {
+    transform: translateY(60px);
+    z-index: -2;
+}
+
+.background-home img.deer {
+    transform: translateY(520px);
+    z-index: -1;
+}
+
+.background-home img.sun {
+    transform: translateY(150px);
+    z-index: -2;
+}
+
+.background-home img.cloud {
+    z-index: -1;
+
+}
+
+/* header Start */
+
+.header-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 228px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.header-home .logo {
+    margin-right: 180px;
+}
+.header-home .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-home a {
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #063347;
+    margin-left: 80px;
+    cursor: pointer;
+}
+                    
+.navbar-home a:first-child {
+    position: relative;
+}
+
+.navbar-home a span {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    height: 7px;
+    background-color: #063347;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.navbar-home a:hover::before {
+    transform: scale(1);
+
+}
+
+
+.navbar-home a::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    height: 7px;
+    background-color: #063347;
+    border-radius: 5px;
+    width: 100%;
+    transform: scale(0);
+    transition: all .3s ease;
+}
+
+.header-home .btn-home1 {
+    width: 342px;
+    height: 74px;
+    margin-right: 160px;
+}
+
+.btn-home1 button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    border: 5px solid #063347;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-home1 button:hover {
+    background-color: #063347;
+    color: #ffff;
+    border: none;
+}
+
+
+/* Home  */
+
+
+/* Get  */
+
+/* Background get start */
+
+.bg-container-get {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #063347;
+}
+
+.background-get {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.header-get {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 228px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.header-get .logo {
+    margin-right: 180px;
+}
+.header-get .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-get a {
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffff;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.navbar-get a:first-child {
+    position: relative;
+}
+
+
+.navbar-get a:hover::before {
+    transform: scale(1);
+
+}
+
+
+.navbar-get a::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    transform: scale(0);
+    transition: all .3s ease;
+}
+
+.header-get .btn-get1 {
+    width: 342px;
+    height: 74px;
+    margin-right: 160px;
+}
+                
+.btn-get1 button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    border: 5px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+}
+
+.btn-get1 button:hover {
+    background-color: #fff;
+    color: #063347;
+    border: none;
+}
+
+
+
+/* header End */
+
+/* About */
+
+.bg-container-about {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header-about {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 228px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+}
+
+.header-about .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-about a {
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #063347;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.navbar-about a:first-child {
+    position: relative;
+}
+
+.navbar-about a span {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    height: 7px;
+    background-color: #063347;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.navbar-about a:hover::before {
+    transform: scale(1);
+
+}
+
+.navbar-about a::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    height: 7px;
+    background-color: #063347;
+    border-radius: 5px;
+    width: 100%;
+    transform: scale(0);
+    transition: all .3s ease;
+}
+
+.header-about .btn-about1 {
+    width: 342px;
+    height: 74px;
+    margin-right: 160px;
+    margin-left: 120px;
+
+}
+                
+.btn-about1 button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    border: 5px solid #063347;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+    color: #063347;
+}
+
+.btn-about1 button:hover {
+    background-color: #063347;
+    color: #fff;
+    border: none;
+}

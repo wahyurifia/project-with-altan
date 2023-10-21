@@ -3,101 +3,79 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    min-height: 120vh;
     overflow: hidden;
 
 }
 
-/* Home */
+/* Index */
 
 /* Background start */
 
-.background-home {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    z-index: -1;
-}
-
-.background-home img {
-    position: absolute;
-    top: 0;
-    right: 0;
+.background-home .cloud {
     width: 100%;
-    pointer-events: none;
 }
 
-.background-home img.village {
-    transform: translateY(60px);
-    z-index: -2;
+.background-home .deer {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
 }
 
-.background-home img.deer {
-    transform: translateY(520px);
+.background-home .sun {
+    position: absolute;
+    width: 100%;
+    top: 150px;
     z-index: -1;
 }
 
-.background-home img.sun {
-    transform: translateY(150px);
-    z-index: -2;
-}
-
-.background-home img.cloud {
+.background-home .village {
+    position: fixed;
+    width: 100%;
+    bottom: 4%;
     z-index: -1;
-
 }
 
 /* header Start */
 
 .header-home {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 228px;
+    height: 235px;
+    top: 0;
     display: flex;
+    align-items: center;
+    transition: .3s ease-in-out;
     justify-content: space-around;
-    align-items: center;
-    z-index: 999;
 }
 
-.header-home .logo {
-    margin-right: 180px;
-}
-.header-home .navbar {
+.navbar-home {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.navbar-home a {
-    position: relative;
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-home li a {
+    margin-left: 80px;
     font-size: 28px;
     font-weight: 600;
-    text-decoration: none;
     color: #063347;
-    margin-left: 80px;
     cursor: pointer;
-}
-                    
-.navbar-home a:first-child {
     position: relative;
-}
-
-.navbar-home a span {
-    position: absolute;
-    bottom: -18px;
-    left: 0;
-    height: 7px;
-    background-color: #063347;
-    border-radius: 5px;
-    width: 100%;
 }
 
 .navbar-home a:hover::before {
@@ -115,13 +93,12 @@ body {
     border-radius: 5px;
     width: 100%;
     transform: scale(0);
-    transition: all .3s ease;
+    transition: all .3s ease-in-out;
 }
 
-.header-home .btn-home1 {
+.btn-home1 {
     width: 342px;
     height: 74px;
-    margin-right: 160px;
 }
 
 .btn-home1 button {
@@ -143,8 +120,7 @@ body {
     border: none;
 }
 
-
-/* Home  */
+/* Index End  */
 
 
 /* Get  */

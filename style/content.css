@@ -3,65 +3,50 @@
 
 /* Content Start */
 
+
 .content-home {
     position: absolute;
-    height: 100vh;
-    left: -1%;
-    bottom: -60px;
+    top: 35%;
+    text-align: center;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .content-home .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: 'Passion One';
-    font-size: 61px;
+    font-size: 80px;
     font-weight: 400;
     color: #063347;
-    line-height: 165%;
     pointer-events: none;
+    line-height: 110px;
+    letter-spacing: 5px;
 }
 
 .content-home p {
     font-size: 36px;
+    padding: 0 20%;
     font-weight: 500;
-    text-align: center;
     margin-top: 30px;
-    width: 60%;
+
 }
 
-.content-home .btn-home2 {
-    width: 238px;
-    height: 74px;
+.btn-home2 {
     margin-top: 30px;
 }
 
-.btn-home2 button {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+.btn-home2 a {
+    padding: 12px 40px;
     font-size: 36px;
     font-weight: 500;
     background-color: #063347 ;
-    font-family: 'Poppins';
+    color: #ffff;
     border-radius: 50px;
     cursor: pointer;
     opacity: 0.91;
 }
 
-.btn-home2 button a {
-    text-decoration: none;
-    color: #ffff;
-    width: 100%;
-    height: 100%;
-}
-
-.btn-home2 button:hover {
+.btn-home2 a:hover {
     opacity: 1;
 }
 
